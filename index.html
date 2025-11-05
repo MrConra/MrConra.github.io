@@ -476,6 +476,15 @@
              });
          });
       </script>
+      <script>
+      document.getElementsByClassName("send_btn").addEventListener("click", function() {
+      gtag('event', 'click_contacto', {
+      'event_category': 'interacción',
+      'event_label': 'boton_contacto'
+      });
+      });
+      </script>
+
      
    </body>
 </html>
