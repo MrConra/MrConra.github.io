@@ -477,15 +477,22 @@
          });
       </script>
       <script>
-      document.getElementsByClassName("send_btn").addEventListener("click", function() {
-      gtag('event', 'click_contacto', {
-      'event_category': 'interacción',
-      'event_label': 'boton_contacto'
-      });
-      });
+         document.getElementsByClassName("send_btn").addEventListener("click", function() {
+         gtag('event', 'click_contacto', {
+         'event_category': 'interacción',
+         'event_label': 'boton_contacto'
+         });
+         });
       </script>
+      <script>
+         document.getElementsByClassName("send_btn").addEventListener("submit", function() {
+         gtag('event', 'envio_formulario', {
+         'event_category': 'formulario',
+         'event_label': 'contacto'
+  });
+});
+</script>
 
-     
    </body>
 </html>
 
